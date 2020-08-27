@@ -1,0 +1,252 @@
+body {
+	text-align: center;
+	background: black;
+	background: url(background.png);
+	background-attachment: fixed ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	height:100%;
+	width:100%;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+hr {
+	border-top: 1px solid white;
+	position: absolute;
+	width: 50%;
+	margin-top: 50vh;
+}
+
+a {
+	text-decoration: none;
+}
+
+.java {
+	display: inline;
+	width: 4ch;
+	background: #be2edd;
+}
+
+.py {
+	display: inline;
+	width: 5ch;
+	background: #6c5ce7;
+}
+
+.c {
+	display: inline;
+	width: 1ch;
+	background: #0984e3;
+}
+
+.aws {
+	display: inline;
+	width: 3ch;
+	background: #74b9ff;
+}
+
+.git {
+	display: inline;
+	width: 3ch;
+	background: #00b894;
+}
+
+.html {
+	display: inline;
+	width: 5ch;
+	background: #e17055;
+}
+
+.css {
+	display: inline;
+	width: 4ch;
+	background: #00cec9;
+}
+
+.js {
+	display: inline;
+	width: 10ch;
+	background: #30336b;
+}
+
+.react {
+	display: inline;
+	width: 8ch;
+	background: #0984e3;
+}
+
+.android {
+	display: inline;
+	width: 7ch;
+	background: #6ab04c;
+}
+
+.pandas {
+	display: inline;
+	width: 6ch;
+	background: #d63031;
+}
+
+.mysql {
+	display: inline;
+	width: 5ch;
+	background: #2d3436;
+}
+
+.linkedin, .github, .email, .resume {
+	visibility: hidden;
+}
+
+.container {
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+}
+
+.name {
+	color: white;
+	position: absolute;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 8vh;
+	margin-top: 20vh;
+}
+
+.text {
+	color: white;
+	position: absolute;
+	font-family: 'Source Code Pro', monospace;
+	margin-top: 40vh;
+	font-size: 4vh;
+}
+
+.social-menu ul {
+	position: absolute;
+	margin-top: 70vh;
+	display: flex;
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0 5.5vh 0 1.5vh;
+}
+
+.social-menu ul li .fa {
+    color: #000000;
+    font-size: 3vh;
+    line-height: 6vh;
+    transition: .5s;
+}
+
+.social-menu ul li .fa:hover {
+    color: #ffffff;
+    text-align: center;
+}
+
+.social-menu ul li a {
+	color: white;
+	font-family: 'Source Code Pro', monospace;
+	text-align: center;
+    display: block;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.social-menu li a .linkedin {
+	 margin: 1.5vh 0 0 -1.5vh;
+}
+
+.social-menu li a .github {
+	 margin: 1.5vh 0 0 -0.35vh;
+}
+
+.social-menu li a .email {
+	 margin: 1.5vh 0 0 -0.001vh;
+}
+
+.social-menu li a .resume {
+	 margin: 1.5vh 0 0 -0.1vh;
+}
+
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #0077B5;
+}
+
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #f94877;
+}
+
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #dd4b39;
+}
+
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: #3aaf85;
+}
+
+.social-menu ul li:nth-child(1) a:hover .linkedin {
+	visibility: visible;
+}
+
+.social-menu ul li:nth-child(2) a:hover .github {
+	visibility: visible;
+}
+
+.social-menu ul li:nth-child(3) a:hover .email {
+    visibility: visible;
+}
+
+.social-menu ul li:nth-child(4) a:hover .resume {
+    visibility: visible;
+}
+
+.marquee {
+	height: 50vh;
+	width: 100%;
+	color: white;
+	margin-top: 50vh;
+	font-weight: bold;
+	font-size: 3vh;
+	font-family: 'Source Code Pro', monospace;
+
+	white-space: nowrap;
+	overflow: hidden;
+	position: relative;
+}
+
+.marquee div {
+  display: block;
+  width: 200%;
+
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+
+  animation: marquee 5s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+}
+
+.marquee div:hover {
+	animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
